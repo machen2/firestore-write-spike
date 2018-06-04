@@ -1,0 +1,3 @@
+rootProject.name = 'firestore_write_spike'
+
+include ':app'
