@@ -12,12 +12,12 @@ import {
     TextInput,
     TouchableOpacity
 } from 'react-native';
-import * as firebase from "react-native-firebase";
+import firebase from "react-native-firebase";
 
 export default class App extends Component {
     constructor() {
         super();
-        // this.ref = firebase.firestore().collection('orders');
+        this.ref = firebase.firestore().collection('orders');
         this.state = {
             orderID: '',
             token: ''
@@ -36,7 +36,7 @@ export default class App extends Component {
         });
     }
 
-    addTodo() {
+    addToOrders() {
         this.ref.add({
             orderID: this.state.orderID,
             token: this.state.token,
@@ -45,6 +45,18 @@ export default class App extends Component {
             orderID: '',
             token: ''
         });
+    }
+
+    getAllOrders() {
+        let allOrders = this.ref.get()
+            .then(snapshot => {
+            snapshot.forEach(doc => {
+                console.log(doc.id, '=>', doc.data());
+            });
+    })
+    .catch(err => {
+      console.log('Error getting documents', err);
+    });
     }
 
     render() {
@@ -58,8 +70,11 @@ export default class App extends Component {
                            placeholder="token"
                            value={this.state.token}
                            onChangeText={(text) => this.updateToken(text)}/>
-                <TouchableOpacity onPress={() => this.addTodo()}/>
+                <TouchableOpacity onPress={() => this.addToOrders()}>
                     <Text style={styles.button}>Store in FB</Text>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => this.getAllOrders()}>
+                    <Text style={styles.button}>Get from FB</Text>
                 </TouchableOpacity>
             </View>
         );

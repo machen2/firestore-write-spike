@@ -7,6 +7,7 @@ target 'firestore_write_spike' do
 
   # Pods for firestore_write_spike
   pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
 
   target 'firestore_write_spikeTests' do
     inherit! :search_paths

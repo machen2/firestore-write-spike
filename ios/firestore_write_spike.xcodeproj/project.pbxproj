@@ -39,9 +39,8 @@
 		448DB3AC2F76D438A1636DF4 /* libPods-firestore_write_spikeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF22A09850944B9BAB6E35FB /* libPods-firestore_write_spikeTests.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		A82ACE1020C6F10F00DD6977 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A82ACE0F20C6F10E00DD6977 /* GoogleService-Info.plist */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		EF54A89D20C6DF890030166E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF54A89C20C6DF890030166E /* GoogleService-Info.plist */; };
-		EF54A89E20C6DF890030166E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF54A89C20C6DF890030166E /* GoogleService-Info.plist */; };
 		FC40FE64B973E89AE46234DD /* libPods-firestore_write_spike.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4E289B0363A31FE459DACF4 /* libPods-firestore_write_spike.a */; };
 /* End PBXBuildFile section */
 
@@ -356,6 +355,7 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		A82ACE0F20C6F10E00DD6977 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "firestore_write_spike/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B8EB3E4A45BEA6A4F4470DFA /* Pods-firestore_write_spike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firestore_write_spike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firestore_write_spike/Pods-firestore_write_spike.debug.xcconfig"; sourceTree = "<group>"; };
 		BCB442E5FD7F3A3983F06AA2 /* Pods-firestore_write_spike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firestore_write_spike.release.xcconfig"; path = "Pods/Target Support Files/Pods-firestore_write_spike/Pods-firestore_write_spike.release.xcconfig"; sourceTree = "<group>"; };
@@ -363,7 +363,6 @@
 		D18332CF578DA327A646508F /* Pods-firestore_write_spikeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firestore_write_spikeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firestore_write_spikeTests/Pods-firestore_write_spikeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DFF1CDDB410EEFAF1701BCCE /* Pods-firestore_write_spikeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firestore_write_spikeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-firestore_write_spikeTests/Pods-firestore_write_spikeTests.release.xcconfig"; sourceTree = "<group>"; };
 		E4E289B0363A31FE459DACF4 /* libPods-firestore_write_spike.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-firestore_write_spike.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF54A89C20C6DF890030166E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -506,7 +505,7 @@
 		13B07FAE1A68108700A75B9A /* firestore_write_spike */ = {
 			isa = PBXGroup;
 			children = (
-				EF54A89C20C6DF890030166E /* GoogleService-Info.plist */,
+				A82ACE0F20C6F10E00DD6977 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -692,6 +691,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				0A6557F4651EF784BFEBDD22 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1111,7 +1111,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF54A89E20C6DF890030166E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1121,7 +1120,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				EF54A89D20C6DF890030166E /* GoogleService-Info.plist in Resources */,
+				A82ACE1020C6F10F00DD6977 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1156,6 +1155,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		0A6557F4651EF784BFEBDD22 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-firestore_write_spike/Pods-firestore_write_spike-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firestore_write_spike/Pods-firestore_write_spike-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
